@@ -1,11 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-
-
-
-// import { render } from 'react-dom';
 import App from './components/App.jsx';
-
 
 
 // eventually import styles here
@@ -14,7 +9,7 @@ import App from './components/App.jsx';
 
 // fix a title, and set it as the innerText of both the title and h1 elements
 
-const title = 'Aaron Dashboard';
+const title = 'The Aaron Dashboard';
 document.querySelector('title').innerText = title;
 document.querySelector('h1').innerText = title;
 
