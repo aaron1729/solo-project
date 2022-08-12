@@ -10,10 +10,15 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            // filename: 'index.html', // it seems that the default here is 'index.html'
             template: './index.html',
         }),
     ],
+    devServer: {
+        static: {
+            publicPath: '/build',
+            directory: path.resolve(__dirname, 'build'),
+        },
+    },
     module: {
         rules: [
             {

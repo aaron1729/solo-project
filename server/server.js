@@ -11,7 +11,7 @@ const { response } = require('express');
 const PORT = process.env.PORT || 3001;
 
 
-// connect to MongoDB: uname=dbUser, pw=thePassword, dbname=life-dashboard (without the last, default is dbname=test)
+// connect to MongoDB: uname=dbUser, pw=thePassword, dbname=life-dashboard. (without the last bit nestled in there, the default value for dbname is 'test'.)
 mongoose.connect('mongodb+srv://dbUser:thePassword@cluster0.eu4mkms.mongodb.net/life-dashboard?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.once('open', () => {
   console.log('Connected to MongoDB!');
